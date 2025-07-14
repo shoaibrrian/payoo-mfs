@@ -9,11 +9,24 @@ document.getElementById('btn-login')
 
             // step2: prevent default behaviour (prevent reloading browser)
             event.preventDefault();  // vejal
-            console.log('click');
 
-            // step3: get the phn number 
+            // step3: get the phn number and pin
             const phoneNumber = document.getElementById('phn-num').value;
-            console.log(phoneNumber)
+            const pinNumber = document.getElementById('pin-number').value;
+
+            console.log(phoneNumber, pinNumber);
+
+            // step4: validate phone and pin
+            // this is temporary
+            if(phoneNumber === '01931117198' && pinNumber === '1234'){
+                console.log('You are logged in');
+                window.location.href = '/home.html'
+
+                // step5: allow users to use the website
+            }
+            else{
+                alert('Wrong phone number or PIN')
+            }
 
 
 })
