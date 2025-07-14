@@ -37,22 +37,36 @@
                 </div>
                 <div class="divider"></div>
                 <!-- Add Money Form Start -->
-                <div class="w-80">
+                <div class=" hidden w-80">
                     <fieldset class="fieldset">
                         <label class="label">Add Money</label>
                         <input id="input-add-money" type="text" class="input" placeholder="Amount" />
                         <label class="label">PIN</label>
-                        <input id="input-pin" type="password" class="input" placeholder="PIN" autocomplete="off" required/>
-                    
+                        <input id="input-pin" type="password" class="input" placeholder="PIN" autocomplete="off"
+                            required />
+
                         <button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
                     </fieldset>
                 </div>
-
                 <!-- Add Money Form End -->
+                <!-- Cashout Start -->
+                <div class="w-80">
+                    <fieldset class="fieldset">
+                        <label class="label">Cashout Money</label>
+                        <input id="input-cashout" type="text" class="input" placeholder="Cashout Amount" />
+                        <label class="label">PIN</label>
+                        <input id="input-cashout-pin" type="password" class="input" placeholder="PIN" autocomplete="off"
+                            required />
+
+                        <button id="btn-cashout" class="btn btn-neutral mt-4">Cash Out</button>
+                    </fieldset>
+                </div>
+                <!-- Cashout End -->
             </div>
         </div>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
 </body>
 
 </html>
