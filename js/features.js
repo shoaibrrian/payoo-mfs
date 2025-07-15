@@ -1,19 +1,23 @@
-// show the cash out form
-document.getElementById('show-cashout-btn').addEventListener('click', function(){
-
-    // show cash out button
-    document.getElementById('cashout-form').classList.remove('hidden')
-
-    // hide the add money form
-    document.getElementById('add-money-form').classList.add('hidden');
+document.getElementById('show-add-money-form').addEventListener('click', function(){
+    showSectionById('add-money-form')
 })
 
-// show add money form
-document.getElementById('show-add-money-btn').addEventListener('click', function(){
+document.getElementById('show-cash-out-form').addEventListener('click', function(){
+    showSectionById('cash-out-form')
+})
 
-    // hide cash out button
-    document.getElementById('cashout-form').classList.add('hidden')
+document.getElementById('show-transfer-form').addEventListener('click', function(){
+    showSectionById('transfer-form')
+})
 
-    // show the add money form
-    document.getElementById('add-money-form').classList.remove('hidden');
+document.getElementById('show-bonus-form').addEventListener('click', function(){
+    showSectionById('bonus-form')
+})
+
+document.getElementById('show-pay-bill-form').addEventListener('click', function(){
+    showSectionById('pay-bill-form')
+})
+
+document.getElementById('show-transaction-form').addEventListener('click', function(){
+    showSectionById('transaction-form')
 })
