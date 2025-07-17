@@ -20,7 +20,7 @@ document.getElementById('btn-login')
         // this is temporary
         if (phoneNumber === '01931117198' && pinNumber === '1234') {
             console.log('You are logged in');
-            window.location.href = '/home.html'
+            window.location.href = './home.html'
 
             // step5: allow users to use the website
         }
